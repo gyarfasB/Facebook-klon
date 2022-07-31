@@ -21,7 +21,7 @@ main {
 }
 .material-symbols-outlined:hover {
     color: #fff;
-    background-color: rgb(0, 46, 120);
+    background-color: rgb(45, 96, 180);
     cursor: pointer;
     transition: 0.5 ease-in-out;
 }
@@ -33,14 +33,14 @@ nav {
     justify-content: space-between;
     height: 3em;
     background-color: #fff;
-    z-index: 3;
+
+    z-index: 1;
 }
-#middle-icons {
+#middle-icons{
     color:rgb(87, 87, 87);
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    border: 1px solid red;
 }
 #middle-icons .material-symbols-outlined {
     padding-right: 3em;
@@ -50,12 +50,12 @@ nav {
 #rightSide-icons {
     display: flex;
     align-items: center;
-    border: 1px solid red;
 }
 #rightSide-icons .material-symbols-outlined {
     background-color: rgb(215, 214, 214);
     border-radius: 50%;
     padding: 0.2em;
+    margin-right: 0.7em;
 }
 #main-search {
     border-radius: 25px;
@@ -63,19 +63,20 @@ nav {
     padding: 5px;
     background-color: rgb(235, 235, 235);
 }
-#fb-logo {
-    width: 1.5em;
-    height: 1.5em;
-    display: none;
+#search-bar img {
+    width: 2em;
+    height: 2em;
 }
 #search-bar {
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     padding: 0.2em;
-    border: 1px solid red;
 }
 #search-bar img {
     width: 1.5em;
     height: 1.5em;
+    margin-right: 0.3em;
 
 }
 /*--------BAL MENÜ---------*/
@@ -132,6 +133,7 @@ article {
 }
 .történetek .material-symbols-outlined {
     border-radius: 50%;
+    font-size: 3em;
 
 }
 .történetek {
@@ -154,4 +156,5 @@ article {
 }
 .jobb-menü .material-symbols-outlined {
     border-radius: 50%;
+    font-size: 1.4em;
 }
