@@ -16,6 +16,15 @@ main {
     background-color: rgb(235, 235, 235);
 
 }
+.material-symbols-outlined {
+    transition:  0.3s;
+}
+.material-symbols-outlined:hover {
+    color: #fff;
+    background-color: rgb(0, 46, 120);
+    cursor: pointer;
+    transition: 0.5 ease-in-out;
+}
         /*-----------NAV-----------*/
 nav {
     display:flex;
@@ -23,20 +32,24 @@ nav {
     top: 0;
     justify-content: space-between;
     height: 3em;
+    background-color: #fff;
+    z-index: 3;
 }
 #middle-icons {
     color:rgb(87, 87, 87);
     display: flex;
+    align-items: center;
     justify-content: center;
     border: 1px solid red;
 }
 #middle-icons .material-symbols-outlined {
     padding-right: 3em;
     padding-left: 3em;
+    border-radius: 4px;
 }
 #rightSide-icons {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     border: 1px solid red;
 }
 #rightSide-icons .material-symbols-outlined {
@@ -56,8 +69,7 @@ nav {
     display: none;
 }
 #search-bar {
-    display: flex;
-    flex-direction: row;
+    display: inline;
     padding: 0.2em;
     border: 1px solid red;
 }
@@ -70,35 +82,76 @@ nav {
 
 .bal-menü {
     display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
     background-color: rgb(235, 235, 235);
-    border: 1px solid red;
+    padding-left: 1em;
+
+}
+.bal-menü ul {
+    position: sticky;
 }
 .bal-menü li {
     font-weight: bold;
     margin-top: 2em;
     margin-bottom: 2em;
-    border: 1px solid red;
+}
+.bal-menü .material-symbols-outlined {
+    border-radius: 4px;
 }
 /*----------BEJEGYZÉSEK-----------*/
 article {
-    border: 1px solid red;
+    flex-shrink: 0;
+    max-width: 60vw;
 }
 .bejegyzések {
-
+    margin-top: 2em;
+}
+.bejegyzések ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bejegyzések h3 .material-symbols-outlined {
+    font-size: 2em;
+    padding: 0.1em;
+    border: 1px solid rgb(132, 132, 132);
+    border-radius: 50%;
+}
+.post {
+    background-color: #fff;
+    margin-top: 2em;
+    border-radius: 10px;
+    border: 1px solid rgb(132, 132, 132);
+    padding: 1.4em;
 }
 .történetek img {
     border: 1px solid rgb(132, 132, 132);
     border-radius: 10px;
 }
+.történetek .material-symbols-outlined {
+    border-radius: 50%;
+
+}
+.történetek {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
 /*-------------JOBB MENÜ-------------*/
 .jobb-menü {
     display: flex;
     background-color: rgb(235, 235, 235);
-    border: 1px solid red;
+    padding-right: 1em;
 }
 .jobb-menü li {
     font-weight: bold;
     margin-top: 2em;
     margin-bottom: 2em;
-    border: 1px solid red;
+}
+.jobb-menü .material-symbols-outlined {
+    border-radius: 50%;
 }
